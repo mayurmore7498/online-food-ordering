@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom px-4 bg-warning">
+        <a class="navbar-brand" href="#">Grill 'N' Chill</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>Home</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="menu.html" role="button" data-bs-toggle="dropdown">
+               <b>Menu</b> 
+              </a>
+              <ul class="dropdown-menu" style="background-color: #ffe8d7; border: solid 2px black; border-radius: 30px">
+                <li><a class="dropdown-item" href="menu.html#app"><b>APPETIZER</b></a></li>
+                <li><a class="dropdown-item" href="menu.html#pizza"><b>PIZZA</b></a></li>
+                <li><a class="dropdown-item" href="menu.html#burger"><b>BURGER</b></a></li>
+                <li><a class="dropdown-item" href="menu.html#Beverage"><b>BEVERAGE</b></a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="revstion.html"><b>Reservation</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About-Us"><b>About Us</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><b>login</b></a>
+            </li>
+           
+          </ul>
+        </div>
+      
+        <div class="d-flex align-items-center">
+         <b> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#48752C"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg></b>
+        </div>
+      </nav>
+
+      <div class="container py-4 hero-section">
+        <div id="home">
+        <div class="row align-items-center">
+
+            
+          <div class="col-md-6 hero-text ">
+            <h4 style="font-family: Dancing Script, cursive">
+              Welcome to <span>Grill 'N' Chill</span>,<br>
+              <small class="text-muted";>"Where Hot Flavors Meet Cool Comfort."</small>
+            </h4>
+            <p class="mt-4">
+              Dive into a culinary celebration where every dish bursts with flavor.
+              At Grill 'N' Chill, we believe in making every meal an unforgettable experience.
+              Whether you're here for a casual meal or a special occasion, our vibrant dishes will leave a lasting impression.
+            </p>
+            <div class="hero-buttons mt-3">
+              <a href="#" class="btn btn-start text-bg-danger">
+                Start Order <i class="bi bi-cart3"></i>
+              </a>
+              <a href="#" class="btn btn-explore  text-bg-danger c" >
+                <i class="bi bi-box-arrow-up-right "></i> Explore Menu
+              </a>
+            </div>
+          </div>
+          
+         
+          <div class="col-md-6 hero-img text-center">
+            <img src="./images/Pizza.png" alt="Cheesy Pizza Slice" class="img-fluid">
+           </div>
+          </div>
+        </div><div class="container menu-section">
+          <h2>OUR <span>MENU</span></h2>
+          <div class="row mt-5 gy-4">
+            <div class="col-md-3">
+              <div class="card menu-card">
+                <img src="./appe-index.avif" alt="Appetizer">
+                <div class="menu-card-body text-center ">
+                  <h5>Appetizer</h5>
+                  <a href="#" class="btn btn-explore text-bg-danger">Explore Variety</a>
+                </div>
+              </div>
+            </div>
+              <div class="col-md-3">
+                <div class="card menu-card">
+                  <img src="./images/index-pizza.jpg" alt="Pizza">
+                  <div class="menu-card-body text-center">
+                    <h5>Pizza</h5>
+                    <a href="#" class="btn btn-explore text-bg-danger" style="transition: background-color 0.3s ease;">Explore Variety</a>
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-3">
+              <div class="card menu-card" style="height: 330px;">
+                <img src="./images/Burger.png" alt="Burger" height="255px" style="background-color: aqua;">
+                <div class="menu-card-body text-center">
+                  <h5>Burger</h5>
+                  <a href="#" class="btn btn-explore text-bg-danger">Explore Variety</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-3">
+              <div class="card menu-card" style="height: 330px;">
+                <img src="./images/bev-index.jpeg" alt="Beverage" height="255px">
+                <div class="menu-card-body text-center">
+                  <h5>Beverage</h5>
+                  <a href="#" class="btn btn-explore text-bg-danger">Explore Variety</a>
+                </div>
+              </div>
+            </div>
+            <div class="aboutus" id="About-Us">
+              <section class="our-story-section p-5">
+                <div class="container ">
+                  <div class="row" data-aos="fade-up">
+                    <h1 style="text-align: center;"><span style="color: #fb4a36;">ABOUT </span>US</h1>
+                    <h4 style="text-align: center; font-family:  italic;" class="mb-5">Crafting Memorable Meals!</h4>
+                  </div>
+                  <div class="story-content row mb-2">
+                    <div class="story-text col-lg-6 col-md-6 col-sm-12 reveal mt-2" data-aos="fade-up" data-os-interval="300">
+                      <p>At <strong>Grill 'N' Chill</strong>, we are passionate about celebrating food. Our chefs bring a touch of creativity to every dish, ensuring a feast for your senses. Join us for an extraordinary dining experience that celebrates flavor and joy.</p>
+                      <p>Founded in [2020], Grill 'N' Chill has been at the forefront of culinary innovation. Our commitment to using the freshest ingredients, combined with our chefs' expertise, has earned us a reputation for excellence. We believe that dining is not just about eating; it's about experiencing the art of food.</p>
+                      <a href="" class="about_btn" style="border-radius: 50px; background-color: #fb4a36; text-decoration: none; size: 70px; padding: 5px;" >
+                        <i class="fa-solid fa-burger"></i><b>Order Now</b>
+                      </a>
+                    </div>
+                    <div class="story-image col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-start slide-in-right" data-aos="fade-up" style="margin: 0px;">
+                      <img src="images/Burger.png" alt="Crafting Memorable Meals" style="width: 100%; height: auto;">
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+              
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+<footer class="bg-dark text-white pt-5 pb-4 " id="footer">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+
+      <!-- About Us -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase fw-bold mb-4">Our Restaurant</h5>
+        <p>
+          A premium dining experience blending exquisite cuisine, elegant ambiance, and unforgettable service.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+        <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="menu.html" class="text-white text-decoration-none">Menu</a></p>
+        <p><a href="revstion.html" class="text-white text-decoration-none">Reservations</a></p>
+        <p><a href="#footer" class="text-white text-decoration-none">Contact</a></p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+        <p><i class="bi bi-house-door-fill me-2"></i> 123 Grill 'N' Chill,Vanaz Pune</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> mmore5@gmail.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +91 98765 43210</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase fw-bold mb-4">Follow Us</h5>
+        <a class="btn btn-outline-light btn-floating m-1" href="#"><i class="bi bi-facebook"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#"><i class="bi bi-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#"><i class="bi bi-twitter-x"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#"><i class="bi bi-youtube"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center pt-4">
+      <p class="mb-0">© 2025 Grill 'N' Chill. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

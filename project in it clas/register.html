@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - Food Ordering System</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('food-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 320px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #e67e22;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #d35400;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Create Account</h2>
+    <form id="registerForm">
+      <input type="text" id="fullname" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <button type="submit">Register</button>
+      <p id="registerError" class="error-msg"></p>
+    </form>
+    <p style="margin-top: 20px;">Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $('#registerForm').on('submit', function(e) {
+      e.preventDefault();
+
+      var password = $('#password').val();
+      var confirmPassword = $('#confirmPassword').val();
+
+      if (password !== confirmPassword) {
+        $('#registerError').text("Passwords do not match");
+        return;
+      }
+
+      // Fake registration success (use AJAX with PHP in real use)
+      alert("Registration successful!");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
